@@ -6,6 +6,43 @@
     <title>PORTFOLIO</title>
 </head>
 <body>
-    <P>TO IRRITADO</P>
+    <div className="App">
+        <div id="navbar">
+            <h1>Lord Portofolio</h1>
+            <a href='#aboutme'>About Me</a>
+            <br/>
+            <a href='#scooby'>Scooby</a>
+            <br/>
+            <a href='#questions'>Questions</a>
+            <br/>
+            <a href='#boss'>Boss Hunt</a>
+        </div>        <div id='right'>
+            <div id="aboutme">
+                <h2>About me</h2>
+                <img id='me' src={logo}/>
+                <p>I am a Scripter with 4 years programming in Roblox Studio. I started in 2020 and i love create creativy ideas in funny games</p>
+            </div>          <Scooby></Scooby>
+            <div id="questions">
+                <h2>Questions</h2>
+                <img src={logo}/>
+                <p>QUESTIONS IS A HORROR GAME</p>
+                <div className='galery'>
+                        <video src={video1} controls></video>
+                        <video src={video2} controls></video>
+                        <video src={video3} controls></video>
+                </div>
+            </div>
+            <div id="boss">
+                <h2>BOSSS HUNT</h2>
+                <img src={logo}/>
+                <p>A BOSS FIGHT GAME</p>
+                <div className='galery'>
+                        <video src={video1} controls></video>
+                        <video src={video2} controls></video>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </body>
 </html>
