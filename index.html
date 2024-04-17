@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div className="App">
@@ -19,26 +20,40 @@
         </div>        <div id='right'>
             <div id="aboutme">
                 <h2>About me</h2>
-                <img id='me' src={logo}/>
+                <img id='me' src= './assets/logo canal.jpg'>
                 <p>I am a Scripter with 4 years programming in Roblox Studio. I started in 2020 and i love create creativy ideas in funny games</p>
-            </div>          <Scooby></Scooby>
+            </div>    
+
+
+            <div id="scooby">
+                <h2>Scooby</h2>
+                <img src='./assets/Png (1).png'/>
+                <p>Scooby was my first project in Roblox, and i tried to recreat some episodes of the series</p>
+                <div className='galery'>
+                        <video src='./assets/scooby1.mp4' controls></video>
+                        <video src='./assets/scooby2.mp4' controls></video>
+                        <video src='./assets/scooby3.mp4' controls></video>
+                        <video src='./assets/scooby4.mp4' controls></video>
+                </div>
+            </div>
+
             <div id="questions">
                 <h2>Questions</h2>
-                <img src={logo}/>
+                <img src='./assets/questions.png'/>
                 <p>QUESTIONS IS A HORROR GAME</p>
                 <div className='galery'>
-                        <video src={video1} controls></video>
-                        <video src={video2} controls></video>
-                        <video src={video3} controls></video>
+                        <video src='./assets/questions1.mp4' controls></video>
+                        <video src='./assets/questions2.mp4' controls></video>
+                        <video src='./assets/questions3.mp4' controls></video>
                 </div>
             </div>
             <div id="boss">
                 <h2>BOSSS HUNT</h2>
-                <img src={logo}/>
+                <img src='./assets/BossHuntlogo.png'/>
                 <p>A BOSS FIGHT GAME</p>
                 <div className='galery'>
-                        <video src={video1} controls></video>
-                        <video src={video2} controls></video>
+                        <video src='./assets/BossHunt1.mp4' controls></video>
+                        <video src='./assets/BossHunt2.mp4' controls></video>
                 </div>
             </div>
         </div>
