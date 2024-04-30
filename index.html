@@ -2,61 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>PORTFOLIO</title>
-    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./mainStyle.css">
 </head>
 <body>
-    <div className="App">
-        <div id="navbar">
-            <h1>Lord Portofolio</h1>
-            <a href='#aboutme'>About Me</a>
-            <br/>
-            <a href='#scooby'>Scooby</a>
-            <br/>
-            <a href='#questions'>Questions</a>
-            <br/>
-            <a href='#boss'>Boss Hunt</a>
-        </div>        <div id='right'>
-            <div id="aboutme">
-                <h2>About me</h2>
-                <img id='me' src= './assets/logo canal.jpg'>
-                <p>I am a Scripter with 4 years programming in Roblox Studio. I started in 2020 and i love create creativy ideas in funny games</p>
-            </div>    
+    <div id="navbar">
+        <h1>Lord's Portfolio</h1>
+    </div>
 
+    <h2 class="title">
+        My Projects
+    </h2>
 
-            <div id="scooby">
-                <h2>Scooby</h2>
-                <img src='./assets/Png (1).png'/>
-                <p>Scooby was my first project in Roblox, and i tried to recreat some episodes of the series</p>
-                <div className='galery'>
-                        <video src='./assets/scooby1.mp4' controls></video>
-                        <video src='./assets/scooby2.mp4' controls></video>
-                        <video src='./assets/scooby3.mp4' controls></video>
-                        <video src='./assets/scooby4.mp4' controls></video>
-                </div>
-            </div>
+    <div id="menu">
 
-            <div id="questions">
-                <h2>Questions</h2>
-                <img src='./assets/questions.png'/>
-                <p>QUESTIONS IS A HORROR GAME</p>
-                <div className='galery'>
-                        <video src='./assets/questions1.mp4' controls></video>
-                        <video src='./assets/questions2.mp4' controls></video>
-                        <video src='./assets/questions3.mp4' controls></video>
-                </div>
-            </div>
-            <div id="boss">
-                <h2>BOSSS HUNT</h2>
-                <img src='./assets/BossHuntlogo.png'/>
-                <p>A BOSS FIGHT GAME</p>
-                <div className='galery'>
-                        <video src='./assets/BossHunt1.mp4' controls></video>
-                        <video src='./assets/BossHunt2.mp4' controls></video>
-                </div>
-            </div>
+        <div onclick="window.location = '/games/scooby.html'" id="scooby" class="project">
+            <img src="assets/Png.png">
+            <p>My first game which is inpirated in Scooby Cartoon</p>
         </div>
+        
+        <div onclick="window.location = '/games/questions.html'"  id="questions" class="project">
+            <img src="assets/questions.png">
+            <p>Questions is a horror game. Which you try to escape from a monster that wants to kill you</p>
+        </div>
+        <div onclick="window.location = '/games/grapples.html'" id="grapples" class="project">
+            <img src="assets/logo grapples.png">
+            <p>Questions is a horror game. Which you try to escape from a monster that wants to kill you</p>
+        </div>
+        <div onclick="window.location = '/games/boss.html'" id="boss" class="project">
+            <img src="assets/BossHuntlogo.png">
+            <p>A boss fight game based in development</p>
+        </div>
+        
 
     </div>
 </body>
