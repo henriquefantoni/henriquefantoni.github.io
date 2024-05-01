@@ -81,6 +81,47 @@ body {
     margin-top: -1vh;
 }
 
+.misc {
+    border: 4px solid ;
+    border-radius: 1%;
+    text-align: center;
+    display: block;
+    margin: auto;    
+    background-color: rgb(39, 194, 255);
+    
+}
+
+
+.videos {
+    margin-top: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.videos video {
+    margin: auto;
+    display: flex;
+    width: 40vw;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.videos h3 {
+    font-size: 100%;
+    display: inline;
+}
+
+.video {
+    border-radius: 10%;
+    margin-bottom: 10vh;
+    margin: auto;
+}
+
+video {
+    width: 60%;
+    margin-left: 4vh;
+}
+
 @media (max-width: 1000px) {
     #menu {
         width: 90vw;
@@ -89,7 +130,18 @@ body {
 
 @media (max-width: 500px) {
     .project {
-        width: 90vw;
+        width: 30vw;
+        height: 20vw;
         margin-bottom: 12vh;
+    }
+
+    .container b {
+        width: 20vw;
+        height: 10vw;
+        font-size: 40%;
+    }
+    .container p {
+
+        font-size: 30%;
     }
 }
