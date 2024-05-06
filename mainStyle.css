@@ -1,19 +1,32 @@
 #navbar {
     width: 100vw;
     background-color: rgb(67, 195, 255);
-    height: 10vh;
+    height: 200px;
+    display: flex;
+    padding: 20px;
+}
+
+.logo {
+    border-radius: 50%;
+    max-width: 176px;
+    width: 176px;
 }
 
 h1{
-    text-align: center;
     padding-top: 2%;
+    font-size: 3rem;
+    width: 50vw;
+    margin: auto;
+}
+
+h2 {
+    font-size: 3rem;
 }
 
 * {
     margin: 0;
     font-family: 'Copperplate';
     color: rgb(255, 255, 255);
-    font-size: 4vh;
     
 }
 
@@ -47,38 +60,50 @@ body {
     height: 100%;
 
 
-    font-size: 40%;
+    font-size: large;
     text-align: justify;
 }
 .project b {
-    width: 100%;
-    height: 100%;
 
-
-    font-size: 60%;
+    font-size: larger;
     text-align: justify;
 }
 
-#menu {
+#menu  {
     background-color: rgb(45, 189, 255);
     margin: auto;
     margin-top: 10vh;
     height: 90vh;
+    justify-content: left;
+    width: 85vw;
+    border-radius: 1%;
+    margin-bottom: 100px;
+    padding-bottom: 30%;
+    border: solid white;
+    max-width: 1280px;
+    
+}
+
+#projects {
+    
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
-    width: 50vw;
 }
 
 .title {
     text-align:  center;
-    margin-top: 2vh;
-    margin-bottom: -5vh;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .container {
     background-color: rgba(0, 0, 0, 0.747);
     margin-top: -1vh;
+    padding: 10px;
+}
+
+.container b {
+    margin-top: 10000px;
 }
 
 .misc {
@@ -88,6 +113,10 @@ body {
     display: block;
     margin: auto;    
     background-color: rgb(39, 194, 255);
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    padding: 30px;
     
 }
 
@@ -123,16 +152,15 @@ video {
 }
 
 @media (max-width: 1000px) {
-    #menu {
-        width: 90vw;
-    }
-}
-
-@media (max-width: 500px) {
     .project {
         width: 30vw;
         height: 20vw;
-        margin-bottom: 12vh;
+        padding-bottom: 12vh;
+        background-color: transparent;
+    }
+
+    #menu {
+        height: 120vh;
     }
 
     .container b {
@@ -143,5 +171,8 @@ video {
     .container p {
 
         font-size: 30%;
+    }
+    .video {
+        display: inline;
     }
 }
