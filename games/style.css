@@ -1,22 +1,33 @@
+:root {
+    --cor-primaria: #333333 ;
+    --cor-secundaria: #222 ;
+    --accent-color: #F39C12 ;
+    --text-color: #fff ;
+    --border-color: #333;
+
+}
+
+
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #00eeff; /* cor de fundo branca */
-    color: #ffffff; /* azul-escuro para o texto */
+    background-color: var(--cor-secundaria); /* cor de fundo branca */
+    color: var(--text-color); /* azul-escuro para o texto */
 }
 .container {
     width: 80%;
     margin: 0 auto;
     padding: 30px;
-    background-color: #00d9ff; /* branco para o fundo do conteúdo */
+    background-color: var(--cor-primaria); /* branco para o fundo do conteúdo */
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* sombra leve para destaque */
     text-align: center;
 }
 h1 {
     text-align: center;
-    color: #ffffff; /* azul para títulos */
+    color: var(--text-color); /* azul para títulos */
 }
 p {
     font-size: 18px;
@@ -28,7 +39,7 @@ p {
     margin: 30px auto;
     width: 20%;
     border-radius: 10px;
-    border: 5px solid #ffffff; /* borda azul para a imagem */
+    border: 5px solid var(--border-color); /* borda azul para a imagem */
 }
 .features {
     margin-top: 40px;
@@ -39,7 +50,7 @@ p {
 .feature-title {
     font-weight: bold;
     font-size: 2.5rem;
-    color: #ffffff; /* azul para títulos de recursos */
+    color: var(--text-color); /* azul para títulos de recursos */
 }
 .feature-description {
     font-size: 1.3rem;
@@ -54,8 +65,8 @@ video {
 }
 
 button {
-    background-color: rgb(47, 255, 151);
-    color: white;
+    background-color: var(--cor-secundaria);
+    color: var(--accent-color);
     width: 40;
     height: 10%;
     font-size: 200%;
@@ -78,7 +89,7 @@ button {
 }
 
 a {
-    color: white;
+    color: var(--accent-color);
     display: block;
     text-decoration: none;
     width: 20vh;
@@ -87,6 +98,6 @@ a {
 
 .media {
     margin-top: 1vh;
-    background-color: rgba(0, 0, 0, 0.185);
-    border-radius: 2%
+    background-color: var(--cor-primaria);
+    border-radius: 2%;
 }
