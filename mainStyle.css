@@ -116,6 +116,8 @@ body {
 .project img {
     width: 100%;
     height: 100%;
+
+
 }
 
 .project p {
@@ -164,9 +166,12 @@ body {
     border: solid var(--border-color);
 }
 
-.container b {
-    margin-top: 10000px;
+.container p {
+
+    font-size: 100%;
+    text-align: justify;
 }
+
 
 .misc {
     border: 4px solid ;
@@ -205,10 +210,11 @@ body {
     border-radius: 10%;
     margin-bottom: 10vh;
     margin: auto;
+    margin-top: 30px;
 }
 
 video {
-    width: 60%;
+    width: 1280px;
     margin-left: 4vh;
 }
 
