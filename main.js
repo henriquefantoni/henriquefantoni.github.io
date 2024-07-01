@@ -55,4 +55,51 @@ window.onload = function ()  {
         boss.querySelector('img').src = "./assets/BossHuntlogo.png"
 
     }
+
+    var terry = document.getElementById('terry')
+
+
+    terry.onmouseenter = function () {
+        terry.querySelector('img').src = "./assets/bossGif.gif"
+
+    }
+    terry.onmouseleave = function () {
+        terry.querySelector('img').src = "./assets/terry.png"
+
+    }
+
+    var scooby = document.getElementById('scooby')
+
+
+    scooby.onmouseenter = function () {
+        scooby.querySelector('img').src = "./assets/scoobyGif.gif"
+
+    }
+    scooby.onmouseleave = function () {
+        scooby.querySelector('img').src = "./assets/Png.png"
+
+    }
+
+    var rescue = document.getElementById('rescue')
+
+
+    rescue.onmouseenter = function () {
+        rescue.querySelector('img').src = "./assets/rescueGif.gif"
+
+    }
+    rescue.onmouseleave = function () {
+        rescue.querySelector('img').src = "./assets/geometric.png"
+
+    }
+    var uncanny = document.getElementById('uncanny')
+
+
+    uncanny.onmouseenter = function () {
+        uncanny.querySelector('img').src = "https://content.imageresizer.com/images/memes/mr-incredible-becoming-uncanny-phase-3-remake-meme-10.jpg"
+
+    }
+    uncanny.onmouseleave = function () {
+        uncanny.querySelector('img').src = "./assets/uncanny.png"
+
+    }
 }
