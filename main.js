@@ -36,7 +36,7 @@ window.onload = function ()  {
 
 
     grapples.onmouseenter = function () {
-        grapples.querySelector('img').src = "./gifGraplles.gif"
+        grapples.querySelector('img').src = "./gifGRAPLLES.gif"
 
     }
     grapples.onmouseleave = function () {
