@@ -4,7 +4,7 @@
     --cor-terciaria: #333 ;
     --accent-color: #F39C12 ;
     --text-color: #fff ;
-    --border-color: #333;
+    --border-color: #999999;
 
 }
 
@@ -166,6 +166,14 @@ body {
     border: solid var(--border-color);
 }
 
+.project:hover {
+
+    transition: .3s;
+    transform: rotate(1deg);
+    
+    
+}
+
 .container p {
 
     font-size: 100%;
@@ -207,10 +215,16 @@ body {
 }
 
 .video {
-    border-radius: 10%;
+    border-radius: 10px;
     margin-bottom: 10vh;
     margin: auto;
     margin-top: 30px;
+    background-color: var(--cor-terciaria);
+    padding: 20px;
+}
+
+.video:hover {
+    border: #fff 2px solid;
 }
 
 video {
@@ -241,5 +255,15 @@ video {
     }
     .video {
         display: inline;
+    }
+}
+
+@keyframes shyneBorder {
+    0% {
+        border: solid 2px white;
+    }
+    100% {
+        border: solid 2px black;
+
     }
 }
