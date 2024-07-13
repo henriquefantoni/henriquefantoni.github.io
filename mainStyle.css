@@ -151,6 +151,7 @@ body {
     
     display: flex;
     flex-wrap: wrap;
+    transform: scale(1.2);
 }
 
 .title {
@@ -187,6 +188,7 @@ body {
     text-align: center;
     display: block;
     margin: auto;    
+    margin-top: 20vh;
     background-color: var(--cor-secundaria);
     margin-left: 30px;
     margin-right: 30px;
@@ -205,7 +207,6 @@ body {
 .videos video {
     margin: auto;
     display: flex;
-    width: 40vw;
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -228,8 +229,9 @@ body {
 }
 
 video {
-    width: 1280px;
     margin-left: 4vh;
+    max-width: 100%;
+    width: 1280px;
 }
 
 @media (max-width: 1000px) {
@@ -257,6 +259,12 @@ video {
         display: inline;
     }
 }
+
+footer {
+    text-align: center;
+    font-size: 2em;
+}
+
 
 @keyframes shyneBorder {
     0% {
