@@ -286,6 +286,14 @@ footer {
     border-radius: 15px;
 }
 
+.resume {
+    text-align: center;
+    border: white solid 5px;
+    border-radius: 15px;    
+    width: 90vw;
+    margin: auto;
+}
+
 
 @keyframes shyneBorder {
     0% {
