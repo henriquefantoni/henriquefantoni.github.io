@@ -1,38 +1,40 @@
 :root {
-    --cor-primaria: #333333 ;
-    --cor-secundaria: #222 ;
-    --accent-color: #F39C12 ;
-    --text-color: #fff ;
-    --border-color: #333;
-
+    --cor-primaria: #00ccff;      /* Azul forte */
+    --cor-secundaria: #e6f7ff;      /* Fundo azul clarinho */
+    --cor-terciaria: #b3eaff;       /* Tom intermediário para containers e destaques */
+    --accent-color: #ff8800;       /* Cor de destaque complementar */
+    --text-color: #222;           /* Texto escuro para boa legibilidade */
+    --border-color: #cccccc;      /* Bordas em cinza claro */
 }
 
-
-
-body,html {
+body, html {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: var(--cor-primaria); /* cor de fundo branca */
-    color: var(--text-color); /* azul-escuro para o texto */
+    background-color: var(--cor-secundaria); /* Fundo claro */
+    color: var(--text-color); /* Texto escuro */
     height: 100%;
 }
+
 .container {
     width: 80%;
     margin: 0 auto;
     padding: 30px;
-    background-color: var(--cor-primaria); /* branco para o fundo do conteúdo */
+    background-color: var(--cor-terciaria); /* Fundo intermediário para destacar o conteúdo */
     border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* sombra leve para destaque */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra leve */
     text-align: center;
 }
+
 h1 {
     text-align: center;
-    color: var(--text-color); /* azul para títulos */
+    color: var(--text-color);
 }
 
 h2 {
-    background-color: black;
+    background-color: var(--cor-primaria); /* Utiliza o azul forte */
+    color: var(--text-color);
+    padding: 10px;
 }
 
 p {
@@ -40,6 +42,7 @@ p {
     line-height: 1.8;
     text-align: center;
 }
+
 .game-image {
     display: block;
     margin: 30px auto;
@@ -48,24 +51,27 @@ p {
     width: 20vw;
     height: 20vw;
     border-radius: 10px;
-    border: 5px solid var(--border-color); /* borda azul para a imagem */
+    border: 5px solid var(--border-color);
     position: relative;
 }
+
 .features {
     margin-top: 40px;
 }
+
 .feature {
     margin-bottom: 15px;
 }
+
 .feature-title {
     font-weight: bold;
     font-size: 2.5rem;
-    color: var(--text-color); /* azul para títulos de recursos */
+    color: var(--text-color);
 }
+
 .feature-description {
     font-size: 1.3rem;
     line-height: 1.6;
-
 }
 
 video {
@@ -83,7 +89,6 @@ button {
     padding: 1px;
     margin-left: 15%;
 }
-
 
 .return {
     background-color: transparent;
@@ -114,12 +119,14 @@ a {
     width: 80%;
     margin: auto;
 }
-.container-left  {
+
+.container-left {
     float: left;
     background-color: var(--cor-primaria);
     width: 30vw;
     height: 200vh;
     font-weight: 1000;
+    /* Se necessário, ajuste a cor do texto para contraste, ex: color: var(--text-color); */
 }
 
 .container-right {
@@ -141,7 +148,7 @@ a {
 
 .estatisticas p {
     margin-left: 4vw;
-    background-color: black;
+    background-color: var(--cor-primaria);
     padding: 5px;
     border-radius: 50px;
     font-weight: 1000;
