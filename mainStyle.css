@@ -1,6 +1,6 @@
 :root {
     --cor-primaria: #00ccff;      /* Azul mais forte */
-    --cor-secundaria: #ebf8ff;      /* Fundo azul claro */
+    --cor-secundaria: #00a6ff;      /* Fundo azul claro */
     --cor-terciaria: #1b7199;       /* Azul muito claro para detalhes */
     --accent-color: #0d6efd;       /* Acento em azul mais forte */
     --text-color: #ffffff;           /* Texto em cor escura */
@@ -110,6 +110,8 @@ body {
     margin-bottom: 20%;
     border: solid var(--border-color);
     font-family: Impact, fantasy;
+    transform: scale(1.1);
+    font-style: normal;
 
 }
 
