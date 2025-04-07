@@ -4,7 +4,7 @@
     --cor-terciaria: #1b7199;       /* Azul muito claro para detalhes */
     --accent-color: #0d6efd;       /* Acento em azul mais forte */
     --text-color: #ffffff;           /* Texto em cor escura */
-    --border-color: #cccccc;      /* Bordas em cinza claro */
+    --border-color: #ffffff;      /* Bordas em cinza claro */
 }
 
 #navbar {
@@ -21,6 +21,25 @@
     width: 176px;
 }
 
+#aboutme {
+    position: relative; /* Importante */
+    background-color: antiquewhite;
+    width: 50vw;
+    margin: auto;
+    display: block;
+    font-size: larger;
+}
+
+#absolute {
+    position: absolute;
+    left: 40%; /* Colado na direita */
+    top: 50%;      /* Ajusta a altura se quiser */
+}
+a { 
+    color: var(--accent-color);
+}
+
+
 h1 {
     padding-top: 4vh;
     font-size: 3rem;
@@ -33,6 +52,8 @@ h1 {
 
 h2 {
     font-size: 3rem;
+    text-align: center;
+    font-family: Impact, fantasy;
 }
 
 * {
