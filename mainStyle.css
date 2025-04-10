@@ -23,11 +23,13 @@
 
 #aboutme {
     position: relative; /* Importante */
-    background-color: antiquewhite;
+    background-color: rgb(0, 238, 255);
     width: 50vw;
     margin: auto;
     display: block;
     font-size: larger;
+    border: white .3vw solid;
+    color: white;
 }
 
 #absolute {
@@ -36,7 +38,7 @@
     top: 50%;      /* Ajusta a altura se quiser */
 }
 a { 
-    color: var(--accent-color);
+    text-decoration: none;
 }
 
 
@@ -129,7 +131,7 @@ body {
     margin-left: 5%;
     margin-top: 5%;
     margin-bottom: 20%;
-    border: solid var(--border-color);
+    border: solid var(--border-color) .3vw;
     font-family: Impact, fantasy;
     transform: scale(1.1);
     font-style: normal;
@@ -187,7 +189,7 @@ body {
     background-color: var(--cor-terciaria);
     padding: 10px;
     height: 65%;
-    border: solid var(--border-color);
+    border: solid var(--border-color) .3vw;
 }
 
 .project:hover {
@@ -236,12 +238,13 @@ body {
     margin-bottom: 10vh;
     margin: auto;
     margin-top: 30px;
-    background-color: var(--cor-terciaria);
+    background-color: var(--cor-primaria);
     padding: 20px;
+    width: 25vw;
 }
 
 .video:hover {
-    border: #fff 2px solid;
+    border: #fff .6vw solid;
 }
 
 video {
