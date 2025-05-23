@@ -32,6 +32,12 @@
     color: white;
 }
 
+#aboutme img {
+    width: 250px;
+    position: relative;
+    left: -2vw;
+}
+
 #absolute {
     position: absolute;
     left: 40%; /* Colado na direita */
@@ -39,7 +45,16 @@
 }
 a { 
     text-decoration: none;
+    font-family: 'Fredoka one';
 }
+
+a:hover { 
+    transition:  .5s;
+    text-decoration: underline;
+    color: blue
+}
+
+
 
 
 h1 {
@@ -48,14 +63,14 @@ h1 {
     width: 50vw;
     margin: auto;
     text-align: center;
-    font-family: Impact, fantasy;
+    font-family: 'Fredoka One';
 
 }
 
 h2 {
     font-size: 3rem;
     text-align: center;
-    font-family: Impact, fantasy;
+    font-family: 'Fredoka One';
 }
 
 * {
@@ -66,11 +81,11 @@ h2 {
 
 #gameDesc {
     color: white;
-    font-family: Impact, fantasy;
+    font-family: 'Fredoka One';
 }
 #gameName {
     color: white;
-    font-family: Impact, fantasy;
+    font-family: 'Fredoka One';
 }
 
 .hero-image {
@@ -126,14 +141,13 @@ body {
 
 .project {
     width: 15vw;
-    background-color: var(--cor-primaria);
-    height: 15vw;
+    background-color: var(--cor-secundaria);
+    height: 20vw;
     margin-left: 5%;
     margin-top: 5%;
     margin-bottom: 20%;
     border: solid var(--border-color) .3vw;
-    font-family: Impact, fantasy;
-    transform: scale(1.1);
+    font-family: 'Fredoka One';
     font-style: normal;
 
 }
@@ -145,20 +159,9 @@ body {
 
 .project img {
     width: 100%;
-    height: 100%;
+    height: 75%;
 }
 
-.project p {
-    width: 100%;
-    height: 100%;
-    font-size: 100%;
-    text-align: justify;
-}
-
-.project b {
-    font-size: larger;
-    text-align: justify;
-}
 
 #menu {
     margin: auto;
@@ -186,20 +189,15 @@ body {
 }
 
 .container {
-    background-color: var(--cor-terciaria);
     padding: 10px;
     height: 65%;
-    border: solid var(--border-color) .3vw;
+    font-size: 2vw;
+    text-align: center;
 }
 
 .project:hover {
     transition: .3s;
     transform: rotate(1deg);
-}
-
-.container p {
-    font-size: 100%;
-    text-align: justify;
 }
 
 .misc {
@@ -258,7 +256,6 @@ video {
         width: 30vw;
         height: 20vw;
         padding-bottom: 12vh;
-        background-color: transparent;
     }
 
     #menu {

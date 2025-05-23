@@ -57,17 +57,6 @@ window.onload = function ()  {
 
     }
 
-    var boss = document.getElementById('boss')
-
-
-    boss.onmouseenter = function () {
-        boss.querySelector('img').src = "./BossGif.gif"
-
-    }
-    boss.onmouseleave = function () {
-        boss.querySelector('img').src = "./assets/BossHuntlogo.png"
-
-    }
 
     var terry = document.getElementById('terry')
 
@@ -81,19 +70,8 @@ window.onload = function ()  {
 
     }
 
-    var scooby = document.getElementById('scooby')
 
-
-    scooby.onmouseenter = function () {
-        scooby.querySelector('img').src = "./assets/scoobyGif.gif"
-
-    }
-    scooby.onmouseleave = function () {
-        scooby.querySelector('img').src = "./assets/Png.png"
-
-    }
-
-    var rescue = document.getElementById('rescue')
+  /*  var rescue = document.getElementById('rescue')
 
 
     rescue.onmouseenter = function () {
@@ -103,16 +81,17 @@ window.onload = function ()  {
     rescue.onmouseleave = function () {
         rescue.querySelector('img').src = "./assets/geometric.png"
 
+    }*/
+
+    var obby = document.getElementById('obby')
+
+
+    obby.onmouseenter = function () {
+        obby.querySelector('img').src = "./assets/help.gif"
+
     }
-    var uncanny = document.getElementById('uncanny')
-
-
-    uncanny.onmouseenter = function () {
-        uncanny.querySelector('img').src = "https://content.imageresizer.com/images/memes/mr-incredible-becoming-uncanny-phase-3-remake-meme-10.jpg"
-
-    }
-    uncanny.onmouseleave = function () {
-        uncanny.querySelector('img').src = "./assets/uncanny.png"
+    obby.onmouseleave = function () {
+        obby.querySelector('img').src = "./assets/obby.jpg"
 
     }
 }
