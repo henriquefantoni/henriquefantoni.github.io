@@ -71,17 +71,17 @@ window.onload = function ()  {
     }
 
 
-  /*  var rescue = document.getElementById('rescue')
+   var scooby = document.getElementById('scooby')
 
 
-    rescue.onmouseenter = function () {
-        rescue.querySelector('img').src = "./assets/rescueGif.gif"
+    scooby.onmouseenter = function () {
+        scooby.querySelector('img').src = "./assets/scoobyGif.gif"
 
     }
-    rescue.onmouseleave = function () {
-        rescue.querySelector('img').src = "./assets/geometric.png"
+    scooby.onmouseleave = function () {
+        scooby.querySelector('img').src = "./assets/png.png"
 
-    }*/
+    }
 
     var obby = document.getElementById('obby')
 
