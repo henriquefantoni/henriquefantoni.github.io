@@ -79,7 +79,7 @@ window.onload = function ()  {
 
     }
     scooby.onmouseleave = function () {
-        scooby.querySelector('img').src = "./assets/png.png"
+        scooby.querySelector('img').src = "./assets/superman logo.png"
 
     }
 
