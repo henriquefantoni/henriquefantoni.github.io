@@ -71,7 +71,7 @@ window.onload = function ()  {
     }
 
 
-   var scooby = document.getElementById('scooby')
+   /*var scooby = document.getElementById('scooby')
 
 
     scooby.onmouseenter = function () {
@@ -81,7 +81,7 @@ window.onload = function ()  {
     scooby.onmouseleave = function () {
         scooby.querySelector('img').src = "./assets/superman logo.png"
 
-    }
+    }*/
 
     var obby = document.getElementById('obby')
 
