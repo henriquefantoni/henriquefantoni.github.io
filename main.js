@@ -83,4 +83,15 @@ window.onload = function () {
         obby.querySelector('img').src = "./assets/obby.jpg"
 
     }
+    var steal = document.getElementById('steal')
+
+
+    steal.onmouseenter = function () {
+        steal.querySelector('img').src = "./assets/stealGif.gif"
+
+    }
+    steal.onmouseleave = function () {
+        steal.querySelector('img').src = "./assets/superman logo.png"
+
+    }
 }
