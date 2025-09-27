@@ -1,11 +1,11 @@
 :root {
-    --primary-color: #2c3e50;
-    /* Azul escuro/grafite */
-    --secondary-color: #34495e;
+  --primary-color: #ffffff;
+  /* Azul escuro/grafite */
+  --secondary-color: #f0f0f0;
     /* Azul mais claro */
-    --accent-color: #3498db;
+    --accent-color: #000000;
     /* Azul vibrante */
-    --text-color: #ecf0f1;
+    --text-color: #000000;
     /* Branco levemente acinzentado */
     --link-color: #3498db;
     /* Cor de link */
@@ -78,7 +78,7 @@ p {
 .description {
     font-style: italic;
     font-size: 1.1em;
-    color: #bdc3c7;
+    color: var(--text-color);
 }
 
 /* Botão PLAY */
@@ -124,6 +124,7 @@ button:hover {
     background-color: var(--secondary-color);
     border-radius: 10px;
     padding: 15px;
+    width: 25vw;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
