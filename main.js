@@ -105,4 +105,16 @@ window.onload = function () {
         suits.querySelector('img').src = "./assets/suits.png"
 
     }
+    var stellar = document.getElementById('stellar')
+    
+    
+       stellar.onmouseenter = function () {
+           stellar.querySelector('img').src = "./assets/Stellar Mates Gif.gif"
+    
+       }
+       stellar.onmouseleave = function () {
+           stellar.querySelector('img').src = "./assets/stellarmates.png"
+    
+       }
 }
+
