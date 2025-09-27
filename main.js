@@ -94,4 +94,15 @@ window.onload = function () {
         steal.querySelector('img').src = "./assets/superman logo.png"
 
     }
+    var suits = document.getElementById('suits')
+
+
+    suits.onmouseenter = function () {
+        suits.querySelector('img').src = "./assets/suitsMenu.gif"
+
+    }
+    suits.onmouseleave = function () {
+        suits.querySelector('img').src = "./assets/suits.png"
+
+    }
 }
