@@ -1,38 +1,38 @@
-const names = ["GRAPPLES","BOSS HUNT","QUESTIONS"]
-const descs = ["FIGHTING GAME","BOSS BATTLE GAME","HORROR GAME"]
-const gifs = ["./gifGRAPLLES.gif","./BossGif.gif","./questionsGif.gif"]
+const names = ["GRAPPLES", "BOSS HUNT", "QUESTIONS"]
+const descs = ["FIGHTING GAME", "BOSS BATTLE GAME", "HORROR GAME"]
+const gifs = ["./gifGRAPLLES.gif", "./BossGif.gif", "./questionsGif.gif"]
 
-var index=0
+var index = 0
 
 
 
-setInterval(()=> {
+setInterval(() => {
     document.getElementById("gameName").innerHTML = names[index]
     document.getElementById("gameDesc").innerHTML = descs[index]
     document.getElementById("heroImage").style.backgroundImage =
-    `linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(${gifs[index]})`
+        `linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(${gifs[index]})`
 
-    if(index<2) {
+    if (index < 2) {
         index++
-        
-    }else {
+
+    } else {
         index = 0
     }
-},5000)
+}, 5000)
 
-window.onload = function ()  {
+window.onload = function () {
 
     document.getElementById("gameName").innerHTML = names[index]
-        document.getElementById("gameDesc").innerHTML = descs[index]
-        document.getElementById("heroImage").style.backgroundImage =
+    document.getElementById("gameDesc").innerHTML = descs[index]
+    document.getElementById("heroImage").style.backgroundImage =
         `linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(${gifs[index]})`
-    
-        if(index<2) {
-            index++
-            
-        }else {
-            index = 0
-        }
+
+    if (index < 2) {
+        index++
+
+    } else {
+        index = 0
+    }
     var Questions = document.getElementById('questions')
 
 
@@ -71,17 +71,6 @@ window.onload = function ()  {
     }
 
 
-   /*var scooby = document.getElementById('scooby')
-
-
-    scooby.onmouseenter = function () {
-        scooby.querySelector('img').src = "./assets/scoobyGif.gif"
-
-    }
-    scooby.onmouseleave = function () {
-        scooby.querySelector('img').src = "./assets/superman logo.png"
-
-    }*/
 
     var obby = document.getElementById('obby')
 

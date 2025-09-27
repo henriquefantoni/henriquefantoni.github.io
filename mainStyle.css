@@ -1,9 +1,14 @@
 :root {
-  --primary-color: #2c3e50; /* Azul escuro/grafite */
-  --secondary-color: #34495e; /* Azul mais claro */
-  --accent-color: #3498db; /* Azul vibrante */
-  --text-color: #ecf0f1; /* Branco levemente acinzentado */
-  --link-color: #3498db; /* Cor de link */
+  --primary-color: #2c3e50;
+  /* Azul escuro/grafite */
+  --secondary-color: #34495e;
+  /* Azul mais claro */
+  --accent-color: #3498db;
+  /* Azul vibrante */
+  --text-color: #ecf0f1;
+  /* Branco levemente acinzentado */
+  --link-color: #3498db;
+  /* Cor de link */
   --font-body: 'Roboto', sans-serif;
   --font-heading: 'Montserrat', sans-serif;
 }
@@ -17,7 +22,10 @@ body {
   line-height: 1.6;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: var(--font-heading);
   color: var(--text-color);
   margin-top: 0;
@@ -45,7 +53,8 @@ a:hover {
 /* Seção Hero - Banner de destaque */
 .hero-image {
   height: 60vh;
-  background-image: url('https://images.unsplash.com/photo-1511281223961-a083d038f220?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Imagem de fundo profissional, pode ser substituída */
+  background-image: url('https://images.unsplash.com/photo-1511281223961-a083d038f220?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  /* Imagem de fundo profissional, pode ser substituída */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
