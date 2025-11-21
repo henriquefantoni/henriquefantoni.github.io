@@ -1,0 +1,108 @@
+[
+    {
+        "id": "grapples",
+        "title": "Grapples",
+        "description": "Grapples is an action game, with grappling mechanics, in comics style.",
+        "image": "/assets/logo grapples.png",
+        "media": [
+            {
+                "title": "Baratie",
+                "type": "video",
+                "src": "/assets/GrapplesBaratie.mp4"
+            },
+            {
+                "title": "Island",
+                "type": "video",
+                "src": "/assets/grapples2.mp4"
+            }
+        ]
+    },
+    {
+        "id": "questions",
+        "title": "Questions",
+        "description": "Questions is an interactive quiz game designed to challenge players' knowledge across various categories. Features a robust question system and leaderboard.",
+        "image": "/assets/questions.png",
+        "media": [
+            {
+                "title": "Quiz UI/UX",
+                "type": "video",
+                "src": "/assets/questions1.mp4"
+            },
+            {
+                "title": "Question Bank Preview",
+                "type": "image",
+                "src": "/assets/questions_bank.jpg"
+            }
+        ]
+    },
+    {
+        "id": "terry",
+        "title": "Terry's Prison",
+        "description": "Terry's Prison is an barry prison type game made to an obby youtuber",
+        "image": "/assets/terry.png",
+        "media": [
+            {
+                "title": "Boss Battle",
+                "type": "video",
+                "src": "/assets/terryBoss.mp4"
+            },
+            {
+                "title": "Gameplay",
+                "type": "video",
+                "src": "/assets/terryGameplay.mp4"
+            }
+        ]
+    },
+    {
+        "id": "obby",
+        "title": "Help a Friend (Obby)",
+        "description": "Help a Friend is a 2 player obby game, you and your friend are attached each other by a hope.",
+        "image": "/assets/obby.jpg",
+        "media": [
+            {
+                "title": "Tik Tok Video",
+                "type": "video",
+                "src": "/assets/french.mp4"
+            }
+        ]
+    },
+    {
+        "id": "steal",
+        "title": "Steal a Comics Character",
+        "description": "",
+        "image": "/assets/superman logo.png",
+        "media": [
+            {
+                "title": "Example",
+                "type": "video",
+                "src": "/assets/steal a.mp4"
+            }
+        ]
+    },
+    {
+        "id": "suits",
+        "title": "Suits",
+        "description": "Suits is a businessman horror game concept .",
+        "image": "/assets/suits.png",
+        "media": [
+            {
+                "title": "Gameplay Draft",
+                "type": "video",
+                "src": "/assets/suits gameplay.mp4"
+            }
+        ]
+    },
+    {
+        "id": "stellar",
+        "title": "Stellar Mates",
+        "description": "FNAF parody",
+        "image": "/assets/stellarmates.png",
+        "media": [
+            {
+                "title": "Full Gameplay",
+                "type": "video",
+                "src": "/assets/stellar mates gameplay.mp4"
+            }
+        ]
+    }
+]
