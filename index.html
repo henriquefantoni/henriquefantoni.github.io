@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lorddosgames | Portfólio de Desenvolvimento Roblox</title>
+    <title>Lorddosgames | Roblox Development Portfolio</title>
     
     <link rel="stylesheet" href="./mainStyle.css"> 
     
@@ -17,36 +17,37 @@
             <a href="#hero">Lorddosgames</a>
         </div>
         <nav>
-            <a href="#projects-section"><i class="fas fa-gamepad"></i> Projetos</a>
-            <a href="#about-section"><i class="fas fa-user-circle"></i> Perfil</a>
-            <a href="#gallery-section"><i class="fas fa-video"></i> Galeria</a>
-            <a href="#contact-section" class="btn-contact"><i class="fas fa-comment-dots"></i> Contato</a>
+            <a href="#projects-section"><i class="fas fa-gamepad"></i> Projects</a>
+            <a href="#about-section"><i class="fas fa-user-circle"></i> Profile</a>
+            <a href="#gallery-section"><i class="fas fa-video"></i> Gallery</a>
+            <a href="#contact-section" class="btn-contact"><i class="fas fa-comment-dots"></i> Contact</a>
         </nav>
     </header>
 
     <section id="hero" class="hero-image">
         <div class="hero-content">
-            <h1 id="gameName" class="main-title">Seu Próximo Grande Jogo Roblox Começa Aqui.</h1>
-            <p id="gameDesc" class="subtitle">Desenvolvimento de sistemas robustos, experiências imersivas e código otimizado para a plataforma Roblox.</p>
-            <a href="#projects-section" class="hero-btn primary-btn">Ver Projetos <i class="fas fa-arrow-down"></i></a>
+            <h1 id="gameName" class="main-title">Your Next Big Roblox Game Starts Here.</h1>
+            <p id="gameDesc" class="subtitle">Developing robust systems, immersive experiences, and optimized code for the Roblox platform.</p>
+            <a href="#projects-section" class="hero-btn primary-btn">View Projects <i class="fas fa-arrow-down"></i></a>
         </div>
     </section>
 
+
     <section id="about-section" class="content-section about-me-section">
-        <h2 class="section-title">Meu Perfil</h2>
+        <h2 class="section-title">My Profile</h2>
         <div class="about-card">
             <div class="profile-info">
-                <img src="./assets/lord lego.png" alt="Avatar de lorddosgames11" class="profile-avatar">
+                <img src="./assets/lord lego.png" alt="Avatar of lorddosgames11" class="profile-avatar">
                 <h3 class="profile-name">@lorddosgames11</h3>
-                <p class="profile-tagline">Desenvolvedor Roblox | LuaU Expert</p>
+                <p class="profile-tagline">Roblox Developer </p>
                 <a href="https://www.roblox.com/pt/users/756567504/profile" target="_blank" class="profile-link secondary-btn">
-                    Ver Perfil Roblox <i class="fas fa-external-link-alt"></i>
+                    View Roblox Profile <i class="fas fa-external-link-alt"></i>
                 </a>
             </div>
             <div class="about-text">
-                <p>Sou um desenvolvedor apaixonado por criar experiências dinâmicas e de alta qualidade no Roblox. Com foco em sistemas otimizados e jogabilidade envolvente, busco sempre elevar o padrão dos projetos em que trabalho. Navegue pelos meus projetos e veja o que posso construir para sua visão.</p>
+                <p>I am a passionate developer focused on creating dynamic, high-quality experiences on Roblox. With a focus on optimized systems and engaging gameplay, I always aim to raise the standard of the projects I work on. Browse my projects to see what I can build for your vision.</p>
                 <ul class="skills-list">
-                    <li><i class="fas fa-code"></i> Scripting (LuaU)</li>
+                    <li><i class="fas fa-code"></i> Scripting (+5 years)</li>
                     <li><i class="fas fa-database"></i> Data Stores</li>
                     <li><i class="fas fa-users"></i> Multi-Player Networking</li>
                 </ul>
@@ -54,24 +55,32 @@
         </div>
     </section>
     
+
     <section id="projects-section" class="content-section projects-section">
-        <h2 class="section-title">Projetos em Destaque</h2>
+        <h2 class="section-title">Featured Projects</h2>
 
         <div class="projects-grid" id="projects-grid">
-
+            
+            <div onclick="window.location = '/games/steal.html'" class="project-card">
+                <img src="assets/superman logo.png" alt="Steal a comics character" class="project-img">
+                <div class="card-content">
+                    <h4 class="card-title">Steal a comics character</h4>
+                    <p class="card-description">Robbery game featuring superhero characters.</p>
+                </div>
+            </div>
             <div onclick="window.location = '/games/grapples.html'" class="project-card">
                 <img src="assets/logo grapples.png" alt="Grapples Logo" class="project-img">
                 <div class="card-content">
                     <h4 class="card-title">Grapples</h4>
-                    <p class="card-description">Jogo de Ação com mecânicas de gancho.</p>
+                    <p class="card-description">Action game featuring grappling hook mechanics.</p>
                 </div>
             </div>
-
+            
             <div onclick="window.location = '/games/questions.html'" class="project-card">
                 <img src="assets/questions.png" alt="Questions Logo" class="project-img">
                 <div class="card-content">
                     <h4 class="card-title">Questions</h4>
-                    <p class="card-description">Sistema interativo de Quiz e perguntas.</p>
+                    <p class="card-description">Short Horror Game.</p>
                 </div>
             </div>
 
@@ -79,7 +88,7 @@
                 <img src="assets/terry.png" alt="Terry's Prison Logo" class="project-img">
                 <div class="card-content">
                     <h4 class="card-title">Terry's Prison</h4>
-                    <p class="card-description">Experiência de fuga com mecânicas de Boss.</p>
+                    <p class="card-description">Obby Game.</p>
                 </div>
             </div>
             
@@ -87,23 +96,16 @@
                 <img src="assets/obby.jpg" alt="Help a Friend Obby" class="project-img">
                 <div class="card-content">
                     <h4 class="card-title">Help a Friend (Obby)</h4>
-                    <p class="card-description">Obby cooperativo e desafiador.</p>
+                    <p class="card-description">2 Friends Obby.</p>
                 </div>
             </div>
             
-            <div onclick="window.location = '/games/steal.html'" class="project-card">
-                <img src="assets/superman logo.png" alt="Steal a comics character" class="project-img">
-                <div class="card-content">
-                    <h4 class="card-title">Steal a comics character</h4>
-                    <p class="card-description">Jogo de roubo e super-heróis.</p>
-                </div>
-            </div>
 
             <div onclick="window.location = '/games/suits.html'" class="project-card">
                 <img src="assets/suits.png" alt="Suits Game" class="project-img">
                 <div class="card-content">
                     <h4 class="card-title">Suits</h4>
-                    <p class="card-description">Experiência social com foco em vestimentas.</p>
+                    <p class="card-description">Businessman Horror Game.</p>
                 </div>
             </div>
 
@@ -111,40 +113,42 @@
                 <img src="assets/stellarmates.png" alt="Stellar Mates Logo" class="project-img">
                 <div class="card-content">
                     <h4 class="card-title">Stellar Mates</h4>
-                    <p class="card-description">Jogo temático espacial com elementos de estratégia.</p>
+                    <p class="card-description">FNAF PARODY.</p>
                 </div>
             </div>
 
         </div>
     </section>
 
+
     <section id="gallery-section" class="content-section gallery-section">
-        <h2 class="section-title">Galeria de Sistemas e Gameplay</h2>
-        <p class="subtitle-text">Demonstrações de código, mecânicas de jogo e interfaces que desenvolvi.</p>
+        <h2 class="section-title">Systems and Gameplay Gallery</h2>
+        <p class="subtitle-text">Demonstrations of code and game mechanics I have developed.</p>
 
         <div class="videos-grid">
+            
             <div class="video-item">
-                <h3 class="video-title">Grapples | Baratie System</h3>
+                <h3 class="video-title">Grapples | Gameplay</h3>
                 <video src="/assets/GrapplesBaratie.mp4" controls preload="metadata"></video>
             </div>
             
             <div class="video-item">
-                <h3 class="video-title">Boss Hunt | Sistema</h3>
+                <h3 class="video-title">Boss Hunt | Boss Fight Draft</h3>
                 <video src="/assets/BossHunt1.mp4" controls preload="metadata"></video>
             </div>
             
             <div class="video-item">
-                <h3 class="video-title">Questions | UI/UX</h3>
+                <h3 class="video-title">Questions | Chase Scene</h3>
                 <video src="/assets/questions1.mp4" controls preload="metadata"></video>
             </div>
             
             <div class="video-item">
-                <h3 class="video-title">Chair Game | Mecânica</h3>
+                <h3 class="video-title">Chair Game | Draft</h3>
                 <video src="/assets/CadeiraRussa.mp4" controls preload="metadata"></video>
             </div>
             
             <div class="video-item">
-                <h3 class="video-title">Build Tool | Criação</h3>
+                <h3 class="video-title">Build Tool | Creation</h3>
                 <video src="/assets/build tool.mp4" controls preload="metadata"></video>
             </div>
             
@@ -159,41 +163,41 @@
             </div>
             
             <div class="video-item">
-                <h3 class="video-title">Geometric Rescue | Sistema</h3>
+                <h3 class="video-title">Geometric Rescue | Answer or Die</h3>
                 <video src="/assets/rescue.mp4" controls preload="metadata"></video>
             </div>
             
             <div class="video-item">
-                <h3 class="video-title">Cook System | Mecânica</h3>
+                <h3 class="video-title">Cook System | Roleplay job</h3>
                 <video src="/assets/cookSystem.mp4" controls preload="metadata"></video>
             </div>
             
             <div class="video-item">
-                <h3 class="video-title">Arena Beyonder | Combate</h3>
-                <video src="/assets/heroes.mp4" controls preload="metadata"></video>
+                <h3 class="video-title">Map Edition Save | Mechanic</h3>
+                <video src="/assets/mapSave.mp4" controls preload="metadata"></video>
             </div>
             
             <div class="video-item">
-                <h3 class="video-title">Heroes Tycoon | Sistema</h3>
+                <h3 class="video-title">Heroes Tycoon | System</h3>
                 <video src="/assets/tycoon.mp4" controls preload="metadata"></video>
             </div>
             
             <div class="video-item">
-                <h3 class="video-title">Fight Game | Combate</h3>
-                <video src="/assets/fightGame.mp4" controls preload="metadata"></video>
+                <h3 class="video-title">Camera System | Draft</h3>
+                <video src="/assets/cameraSystem.mp4" controls preload="metadata"></video>
             </div>
 
         </div>
     </section>
     
+
     <footer id="contact-section" class="main-footer">
         <div class="footer-content">
-            <p class="footer-text">Interessado em um projeto? Vamos conversar!</p>
+            <p class="footer-text">Interested in a project? Let's talk!</p>
             <p class="contact-info">
-                Entre em contato no Discord: 
+                Contact me on Discord: 
                 <span class="discord-tag"><i class="fab fa-discord"></i> **@lorddosgames**</span>
             </p>
-            <p class="copyright">© 2025 Lorddosgames. Todos os direitos reservados.</p>
         </div>
     </footer>
     
