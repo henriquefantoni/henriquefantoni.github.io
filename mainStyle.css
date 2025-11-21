@@ -1,223 +1,387 @@
+/* style.css */
+
+/* 1. Reset Básico e Variáveis */
 :root {
-  --primary-color: #ffffff;
-  /* Azul escuro/grafite */
-  --secondary-color: #f0f0f0;
-  /* Azul mais claro */
-  --accent-color: #3498db;
-  /* Azul vibrante */
-  --text-color: #000000;
-  /* Branco levemente acinzentado */
-  --link-color: #3498db;
-  /* Cor de link */
-  --font-body: 'Roboto', sans-serif;
-  --font-heading: 'Montserrat', sans-serif;
+    --color-primary: #00aaff; /* Azul de destaque (Ciano) */
+    --color-secondary: #ffaa00; /* Laranja/Amarelo de destaque */
+    --color-background: #121212; /* Fundo muito escuro */
+    --color-card-bg: #1e1e1e; /* Fundo dos cards */
+    --color-text-light: #f0f0f0; /* Texto claro */
+    --color-text-dimmed: #aaaaaa; /* Texto secundário */
+    --font-primary: 'Montserrat', sans-serif;
+    --font-code: 'Roboto Mono', monospace;
+    --spacing-md: 20px;
+    --spacing-lg: 40px;
 }
 
-/* Reset básico e tipografia global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  font-family: var(--font-body);
-  background-color: var(--primary-color);
-  color: var(--text-color);
-  margin: 0;
-  line-height: 1.6;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  font-family: var(--font-heading);
-  color: var(--text-color);
-  margin-top: 0;
-  margin-bottom: 0.5em;
-  text-align: center;
+    font-family: var(--font-primary);
+    background-color: var(--color-background);
+    color: var(--color-text-light);
+    line-height: 1.6;
+    scroll-behavior: smooth;
 }
 
 a {
-  color: var(--link-color);
-  text-decoration: none;
-  transition: color 0.3s ease;
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
 a:hover {
-  color: var(--link-color);
+    color: var(--color-secondary);
 }
 
-/* Estrutura do layout */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+/* 2. Tipografia */
+.main-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-md);
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
-/* Seção Hero - Banner de destaque */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-lg);
+    border-bottom: 3px solid var(--color-primary);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.subtitle, .subtitle-text {
+    font-size: 1.2rem;
+    color: var(--color-text-dimmed);
+    margin-bottom: var(--spacing-md);
+}
+
+/* 3. Botões Reutilizáveis */
+.primary-btn, .secondary-btn, .hero-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+}
+
+.primary-btn, .hero-btn {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+}
+
+.primary-btn:hover, .hero-btn:hover {
+    background-color: var(--color-secondary);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.secondary-btn {
+    background-color: transparent;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+}
+
+.secondary-btn:hover {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+}
+
+/* 4. Layout Geral e Seções */
+.content-section {
+    padding: 80px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 5. Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(18, 18, 18, 0.95); /* Leve transparência */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+}
+
+.navbar .logo a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.navbar nav a {
+    margin-left: 25px;
+    font-weight: 600;
+    padding: 5px 0;
+    transition: color 0.3s;
+}
+
+.navbar nav a i {
+    margin-right: 8px;
+}
+
+/* 6. Hero */
 .hero-image {
-  height: 60vh;
-  background-image: url('https://images.unsplash.com/photo-1511281223961-a083d038f220?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-  /* Imagem de fundo profissional, pode ser substituída */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
+    height: 100vh;
+    background: url('./assets/default-hero.jpg') center/cover no-repeat; /* Use uma imagem de fundo de alta qualidade aqui */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
 }
 
-.hero-text {
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 30px 40px;
-  border-radius: 10px;
+.hero-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Overlay escuro */
 }
 
-.hero-text h2 {
-  font-size: 3em;
-  margin: 0;
-  color: var(--primary-color)
+.hero-content {
+    position: relative;
+    z-index: 10;
+    max-width: 800px;
+    padding: 20px;
 }
 
-.hero-text p {
-  font-size: 1.2em;
-  margin-top: 10px;
+/* 7. Seção Perfil (About Me) */
+.about-me-section {
+    text-align: center;
 }
 
-.hero-btn {
-  display: inline-block;
-  background-color: var(--accent-color);
-  color: var(--text-color);
-  padding: 12px 24px;
-  border-radius: 50px;
-  margin-top: 20px;
-  text-transform: uppercase;
-  font-weight: bold;
-  transition: transform 0.3s ease, background-color 0.3s ease;
+.about-card {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-lg);
+    text-align: left;
+    background-color: var(--color-card-bg);
+    padding: var(--spacing-lg);
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-.hero-btn:hover {
-  background-color: #2980b9;
-  transform: translateY(-3px);
+.profile-info {
+    flex: 0 0 250px; /* Largura fixa para a coluna de avatar */
+    text-align: center;
+    border-right: 2px solid #333;
+    padding-right: var(--spacing-md);
 }
 
-/* Seção de Perfil */
-#aboutme {
-  text-align: center;
-  padding: 40px 20px;
-  background-color: var(--secondary-color);
-  border-bottom: 2px solid #2c3e50;
+.profile-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--color-primary);
+    margin-bottom: var(--spacing-md);
 }
 
-#aboutme img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
+.profile-name {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
 }
 
-#aboutme p {
-  margin: 10px 0;
-  font-size: 1.2em;
+.profile-tagline {
+    color: var(--color-secondary);
+    font-family: var(--font-code);
+    margin-bottom: var(--spacing-md);
 }
 
-#aboutme a {
-  font-weight: bold;
-  font-size: 1em;
+.about-text {
+    flex-grow: 1;
 }
 
-/* Seção de Projetos */
-#projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  padding: 40px 20px;
+.skills-list {
+    list-style: none;
+    margin-top: var(--spacing-md);
+    display: flex;
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
 }
 
-.project {
-  background-color: var(--secondary-color);
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
+.skills-list li {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
 }
 
-.project:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+.skills-list li i {
+    margin-right: 5px;
 }
 
-.project img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  display: block;
+/* 8. Seção Projetos (Grid) */
+.projects-section {
+    text-align: center;
 }
 
-.project .container {
-  padding: 15px;
-  text-align: center;
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-md);
 }
 
-.project h4 {
-  margin: 0;
-  font-size: 1.2em;
+.project-card {
+    background-color: var(--color-card-bg);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
 }
 
-/* Seção de Galeria */
-.misc {
-  padding: 40px 20px;
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--color-primary);
 }
 
-.videos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
+.project-img {
+    width: 100%;
+    height: 200px; /* Altura fixa para as imagens */
+    object-fit: cover;
+    border-bottom: 1px solid #333;
 }
 
-.video {
-  background-color: var(--secondary-color);
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  margin: 1vw;
+.card-content {
+    padding: var(--spacing-md);
 }
 
-.video h3 {
-  text-align: center;
-  margin-bottom: 15px;
+.card-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: var(--color-primary);
 }
 
-.video video {
-  width: 25vw;
-  height: 10vw;
-  border-radius: 8px;
+.card-description {
+    color: var(--color-text-dimmed);
 }
 
-/* Rodapé */
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: var(--secondary-color);
-  color: var(--text-color);
-  font-size: 1em;
+/* 9. Galeria de Vídeos (Grid) */
+.gallery-section {
+    text-align: center;
 }
 
-footer strong {
-  color: var(--accent-color);
+.videos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
 }
 
-/* Responsividade */
+.video-item {
+    background-color: var(--color-card-bg);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.video-title {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: var(--color-secondary);
+}
+
+.video-item video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* 10. Footer */
+.main-footer {
+    background-color: #0d0d0d;
+    color: var(--color-text-dimmed);
+    padding: 40px 5%;
+    text-align: center;
+    border-top: 5px solid var(--color-primary);
+}
+
+.footer-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-text-light);
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+    font-family: var(--font-code);
+}
+
+.discord-tag {
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.discord-tag i {
+    margin-right: 5px;
+}
+
+.copyright {
+    font-size: 0.8rem;
+    color: #555;
+}
+
+/* 11. Responsividade */
 @media (max-width: 768px) {
-  .hero-text h2 {
-    font-size: 2em;
-  }
+    .main-title {
+        font-size: 2.5rem;
+    }
+    .section-title {
+        font-size: 2rem;
+    }
 
-  .hero-text p {
-    font-size: 1em;
-  }
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar nav {
+        margin-top: 10px;
+    }
+
+    .navbar nav a {
+        margin: 0 10px;
+        display: inline-block;
+    }
+    
+    .about-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-info {
+        border-right: none;
+        border-bottom: 2px solid #333;
+        padding-right: 0;
+        padding-bottom: var(--spacing-md);
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .skills-list {
+        justify-content: center;
+    }
 }
-
-/* Adicionando Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap');
