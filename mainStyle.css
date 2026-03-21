@@ -192,7 +192,6 @@ a:hover {
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    border: 5px solid var(--color-primary);
     margin-bottom: var(--spacing-md);
 }
 
@@ -235,6 +234,10 @@ a:hover {
 /* 8. Seção Projetos (Grid) */
 .projects-section {
     text-align: center;
+}
+
+.bloxtailor {
+    
 }
 
 .projects-grid {
