@@ -20,11 +20,11 @@
     {
         "id": "questions",
         "title": "Questions",
-        "description": "Questions is an interactive quiz game designed to challenge players' knowledge across various categories. Features a robust question system and leaderboard.",
+        "description": "In this game, you take on the role of a brave explorer who decides to investigate their neighbor's old, abandoned house. What starts as simple curiosity quickly turns into an intriguing journey filled with puzzles, secrets, and hidden dangers... This is QUESTIONS🎩!",
         "image": "/assets/questions.png",
         "media": [
             {
-                "title": "Quiz UI/UX",
+                "title": "Sludge Cutscene",
                 "type": "video",
                 "src": "/assets/questions1.mp4"
             }
@@ -64,11 +64,11 @@
     {
         "id": "steal",
         "title": "Steal a Comics Character",
-        "description": "",
+        "description": "Steal a brainrot copy",
         "image": "/assets/superman logo.png",
         "media": [
             {
-                "title": "Example",
+                "title": "Gameplay",
                 "type": "video",
                 "src": "/assets/steal a.mp4"
             }
