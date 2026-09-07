@@ -1,9 +1,32 @@
 [
     {
+        "id": "thirsty-vampire",
+        "title": "Thirsty Vampire",
+        "description": "Thirsty Vampire is a reskin of infectious smile. I worked in the admin panel.",
+        "image": "/assets/thirsty-vampire.png",
+        "playUrl": "https://www.roblox.com/games/12118894416/Thirsty-Vampire",
+        "media": []
+    },
+    {
+        "id": "steal",
+        "title": "Steal a Comics Character",
+        "description": "Steal a brainrot copy",
+        "image": "/assets/superman logo.png",
+        "playUrl": "https://www.roblox.com/games/71205655156117/Steal-a-Comics-Character",
+        "media": [
+            {
+                "title": "Gameplay",
+                "type": "video",
+                "src": "/assets/steal a.mp4"
+            }
+        ]
+    },
+    {
         "id": "grapples",
         "title": "Grapples",
         "description": "Grapples is an action game, with grappling mechanics, in comics style.",
         "image": "/assets/logo grapples.png",
+        "playUrl": "https://www.roblox.com/games/15863655061/Grapples",
         "media": [
             {
                 "title": "Baratie",
@@ -22,6 +45,7 @@
         "title": "Questions",
         "description": "In this game, you take on the role of a brave explorer who decides to investigate their neighbor's old, abandoned house. What starts as simple curiosity quickly turns into an intriguing journey filled with puzzles, secrets, and hidden dangers... This is QUESTIONS🎩!",
         "image": "/assets/questions.png",
+        "playUrl": "https://www.roblox.com/games/10803306808/QUESTIONS",
         "media": [
             {
                 "title": "Sludge Cutscene",
@@ -35,6 +59,7 @@
         "title": "Terry's Prison",
         "description": "Terry's Prison is an barry prison type game made to an obby youtuber",
         "image": "/assets/terry.png",
+        "playUrl": "https://www.roblox.com/games/16732527550/TERRYS-PRISON-BREAKOUT-OBBY",
         "media": [
             {
                 "title": "Boss Battle",
@@ -53,6 +78,7 @@
         "title": "Help a Friend (Obby)",
         "description": "Help a Friend is a 2 player obby game, you and your friend are attached each other by a hope.",
         "image": "/assets/obby.jpg",
+        "playUrl": "https://www.roblox.com/games/135111292548211",
         "media": [
             {
                 "title": "Tik Tok Video",
@@ -62,23 +88,11 @@
         ]
     },
     {
-        "id": "steal",
-        "title": "Steal a Comics Character",
-        "description": "Steal a brainrot copy",
-        "image": "/assets/superman logo.png",
-        "media": [
-            {
-                "title": "Gameplay",
-                "type": "video",
-                "src": "/assets/steal a.mp4"
-            }
-        ]
-    },
-    {
         "id": "suits",
         "title": "Suits",
-        "description": "Suits is a businessman horror game concept .",
+        "description": "Suits is a personal passion project inspired by Doors in development: you are an investor called to a business meeting on the 100th floor of a company and must survive through all the floors until you reach the boss's office.",
         "image": "/assets/suits.png",
+        "playUrl": "https://www.roblox.com/games/11745657919/SUITS",
         "media": [
             {
                 "title": "Gameplay Draft",
@@ -92,6 +106,7 @@
         "title": "Stellar Mates",
         "description": "FNAF parody",
         "image": "/assets/stellarmates.png",
+        "playUrl": "https://www.roblox.com/games/140311933369962/Stellar-Mates-KICKSTARTER",
         "media": [
             {
                 "title": "Full Gameplay",

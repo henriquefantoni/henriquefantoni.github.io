@@ -39,9 +39,12 @@
 
     <main class="flex-1">
         <section id="project-hero" class="pt-20 pb-12 px-6 max-w-4xl mx-auto text-center">
-            <div class="mb-8">
+            <div class="mb-8 flex flex-col items-center">
                 <h1 id="project-title" class="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-3">Loading Project...</h1>
-                <p id="project-description" class="text-base sm:text-lg text-text-dimmed max-w-2xl mx-auto">Fetching project details...</p>
+                <p id="project-description" class="text-base sm:text-lg text-text-dimmed max-w-2xl mx-auto mb-6">Fetching project details...</p>
+                <a id="project-play-button" href="#" target="_blank" rel="noopener noreferrer" class="hidden inline-flex items-center gap-2.5 px-8 py-3.5 rounded-full font-semibold uppercase tracking-wider text-sm bg-primary text-background hover:bg-secondary hover:text-background transition-all transform hover:-translate-y-0.5 shadow-lg">
+                    <i class="fas fa-play text-xs"></i> Play on Roblox <i class="fas fa-external-link-alt text-xs"></i>
+                </a>
             </div>
             <div id="project-main-content" class="bg-surface rounded-2xl p-4 sm:p-6 border border-white/5 shadow-2xl"></div>
         </section>
