@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     try {
-        const response = await fetch('./projects.json'); // Caminho para o seu JSON
+        const response = await fetch('./projects.json');
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -31,19 +31,19 @@ document.addEventListener('DOMContentLoaded', async () => {
                 mainImg.id = 'project-main-image';
                 mainImg.src = project.image;
                 mainImg.alt = `${project.title} Main Image`;
-                mainImg.classList.add('game-image');
+                mainImg.className = 'w-full rounded-xl max-h-[600px] object-cover shadow-md mx-auto block';
                 mainContent.appendChild(mainImg);
             }
 
             const mediaGrid = document.getElementById('project-media-grid');
-            mediaGrid.innerHTML = ''; // Limpa qualquer conteúdo existente
+            mediaGrid.innerHTML = '';
 
             project.media.forEach(mediaItem => {
                 const mediaDiv = document.createElement('div');
-                mediaDiv.classList.add('video-item'); // Reutilizando a classe do CSS principal
+                mediaDiv.className = 'bg-surface rounded-xl p-4 border border-white/5 shadow-lg flex flex-col';
 
                 const mediaTitle = document.createElement('h3');
-                mediaTitle.classList.add('video-title');
+                mediaTitle.className = 'text-sm font-semibold text-secondary mb-2.5 truncate';
                 mediaTitle.textContent = mediaItem.title;
                 mediaDiv.appendChild(mediaTitle);
 
@@ -52,18 +52,17 @@ document.addEventListener('DOMContentLoaded', async () => {
                     videoElement.src = mediaItem.src;
                     videoElement.controls = true;
                     videoElement.preload = "metadata";
+                    videoElement.className = 'w-full rounded-lg aspect-video object-cover bg-black flex-1';
                     mediaDiv.appendChild(videoElement);
                 } else if (mediaItem.type === 'image') {
                     const imageElement = document.createElement('img');
                     imageElement.src = mediaItem.src;
                     imageElement.alt = mediaItem.title;
-                    imageElement.style.width = '100%'; // Garante que a imagem preencha o container
-                    imageElement.style.borderRadius = '8px';
+                    imageElement.className = 'w-full rounded-lg object-cover flex-1';
                     mediaDiv.appendChild(imageElement);
                 }
                 mediaGrid.appendChild(mediaDiv);
             });
-
 
         } else {
             document.getElementById('project-title').textContent = "Project Not Found";

@@ -1,54 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="pageTitle">Project Details | Lorddosgames</title>
     
-    <link rel="stylesheet" href="./style.css"> 
+    <link rel="stylesheet" href="../css/tailwind.css"> 
     
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
-<body>
-    <header class="navbar">
-        <div class="logo">
-            <a href="/index.html">Lorddosgames</a>
+<body class="bg-background text-text-light font-sans antialiased selection:bg-primary selection:text-background min-h-screen flex flex-col">
+    <header class="sticky top-0 z-50 bg-background/95 backdrop-blur-md border-b border-white/5 px-6 py-4 transition-all">
+        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div class="text-xl font-bold tracking-tight">
+                <a href="/index.html" class="text-primary hover:text-secondary transition-colors">Lorddosgames</a>
+            </div>
+            <nav class="flex flex-wrap justify-center items-center gap-6 text-sm font-semibold">
+                <a href="/index.html#projects-section" class="flex items-center gap-2 text-text-light hover:text-secondary transition-colors">
+                    <i class="fas fa-gamepad text-primary"></i> Projects
+                </a>
+                <a href="/index.html#about-section" class="flex items-center gap-2 text-text-light hover:text-secondary transition-colors">
+                    <i class="fas fa-user-circle text-primary"></i> Profile
+                </a>
+                <a href="/index.html#gallery-section" class="flex items-center gap-2 text-text-light hover:text-secondary transition-colors">
+                    <i class="fas fa-video text-primary"></i> Gallery
+                </a>
+                <a href="/index.html#contact-section" class="flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary text-primary hover:bg-primary hover:text-background transition-all">
+                    <i class="fas fa-comment-dots"></i> Contact
+                </a>
+            </nav>
         </div>
-        <nav>
-            <a href="/index.html#projects-section"><i class="fas fa-gamepad"></i> Projects</a>
-            <a href="/index.html#about-section"><i class="fas fa-user-circle"></i> Profile</a>
-            <a href="/index.html#gallery-section"><i class="fas fa-video"></i> Gallery</a>
-            <a href="/index.html#contact-section" class="btn-contact"><i class="fas fa-comment-dots"></i> Contact</a>
-        </nav>
     </header>
 
-    <section id="project-hero" class="project-hero-section content-section">
-        <div class="project-header">
-            <h1 id="project-title" class="main-title">Loading Project...</h1>
-            <p id="project-description" class="subtitle">Fetching project details...</p>
-        </div>
-        <div id="project-main-content" class="project-main-content"></div>
-    </section>
-
-    <section id="project-media-section" class="content-section gallery-section">
-        <h2 class="section-title">Project Media</h2>
-        <p class="subtitle-text">Explore more images and videos from this project.</p>
-        <div id="project-media-grid" class="videos-grid">
+    <main class="flex-1">
+        <section id="project-hero" class="pt-20 pb-12 px-6 max-w-4xl mx-auto text-center">
+            <div class="mb-8">
+                <h1 id="project-title" class="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-3">Loading Project...</h1>
+                <p id="project-description" class="text-base sm:text-lg text-text-dimmed max-w-2xl mx-auto">Fetching project details...</p>
             </div>
-    </section>
+            <div id="project-main-content" class="bg-surface rounded-2xl p-4 sm:p-6 border border-white/5 shadow-2xl"></div>
+        </section>
 
-    <footer id="contact-section" class="main-footer">
-        <div class="footer-content">
-            <p class="footer-text">Interested in a project? Let's talk!</p>
-            <p class="contact-info">
+        <section id="project-media-section" class="py-12 px-6 max-w-6xl mx-auto text-center">
+            <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-2 inline-block">Project Media</h2>
+            <p class="text-text-dimmed mb-8 text-sm sm:text-base">Explore more images and videos from this project.</p>
+            <div id="project-media-grid" class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left"></div>
+        </section>
+    </main>
+
+    <footer id="contact-section" class="bg-surface-dark py-12 px-6 border-t border-white/10 text-center">
+        <div class="max-w-6xl mx-auto">
+            <p class="text-xl font-semibold text-text-light mb-2">Interested in a project? Let's talk!</p>
+            <p class="text-text-dimmed font-mono text-sm mb-4">
                 Contact me on Discord: 
-                <span class="discord-tag"><i class="fab fa-discord"></i> **@lorddosgames**</span>
+                <span class="text-primary font-bold"><i class="fab fa-discord"></i> @lorddosgames</span>
             </p>
-            <p class="copyright">© 2025 Lorddosgames. All rights reserved.</p>
+            <p class="text-xs text-text-dimmed">© 2025 Lorddosgames. All rights reserved.</p>
         </div>
     </footer>
     
-    <script src="./project-detail.js"></script> </body>
+    <script src="./project-detail.js"></script>
+</body>
 </html>

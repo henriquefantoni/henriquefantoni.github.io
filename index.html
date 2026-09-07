@@ -1,212 +1,244 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lorddosgames | Roblox Development Portfolio</title>
     
-    <link rel="stylesheet" href="./mainStyle.css"> 
+    <link rel="stylesheet" href="./css/tailwind.css"> 
     
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
-<body>
-    <header class="navbar">
-        <div class="logo">
-            <a href="#hero">Lorddosgames</a>
+<body class="bg-background text-text-light font-sans antialiased selection:bg-primary selection:text-background min-h-screen flex flex-col">
+    <header class="sticky top-0 z-50 bg-background/95 backdrop-blur-md border-b border-white/5 px-6 py-4 transition-all">
+        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div class="text-xl font-bold tracking-tight">
+                <a href="#hero" class="text-primary hover:text-secondary transition-colors">Lorddosgames</a>
+            </div>
+            <nav class="flex flex-wrap justify-center items-center gap-6 text-sm font-semibold">
+                <a href="#projects-section" class="flex items-center gap-2 text-text-light hover:text-secondary transition-colors">
+                    <i class="fas fa-gamepad text-primary"></i> Projects
+                </a>
+                <a href="#about-section" class="flex items-center gap-2 text-text-light hover:text-secondary transition-colors">
+                    <i class="fas fa-user-circle text-primary"></i> Profile
+                </a>
+                <a href="#gallery-section" class="flex items-center gap-2 text-text-light hover:text-secondary transition-colors">
+                    <i class="fas fa-video text-primary"></i> Gallery
+                </a>
+                <a href="#contact-section" class="flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary text-primary hover:bg-primary hover:text-background transition-all">
+                    <i class="fas fa-comment-dots"></i> Contact
+                </a>
+            </nav>
         </div>
-        <nav>
-            <a href="#projects-section"><i class="fas fa-gamepad"></i> Projects</a>
-            <a href="#about-section"><i class="fas fa-user-circle"></i> Profile</a>
-            <a href="#gallery-section"><i class="fas fa-video"></i> Gallery</a>
-            <a href="#contact-section" class="btn-contact"><i class="fas fa-comment-dots"></i> Contact</a>
-        </nav>
     </header>
 
-    <section id="hero" class="hero-image">
-        <div class="hero-content">
-            <h1 id="gameName" class="main-title"></h1>
-            <p id="gameDesc" class="subtitle"></p>
-            <a href="#projects-section" class="hero-btn primary-btn">View Projects <i class="fas fa-arrow-down"></i></a>
-        </div>
-    </section>
-
-
-    <section id="about-section" class="content-section about-me-section">
-        <h2 class="section-title">My Profile</h2>
-        <div class="about-card">
-            <div class="profile-info">
-                <img src="./assets/lord lego.png" alt="Avatar of lorddosgames11" class="profile-avatar">
-                <h3 class="profile-name">@lorddosgames11</h3>
-                <p class="profile-tagline">Roblox Developer </p>
-                <a href="https://www.roblox.com/pt/users/756567504/profile" target="_blank" class="profile-link secondary-btn">
-                    View Roblox Profile <i class="fas fa-external-link-alt"></i>
+    <main class="flex-1">
+        <section id="hero" class="min-h-screen flex items-center justify-center relative text-center px-4 bg-background bg-center bg-cover -mt-16 pt-16">
+            <div class="relative z-10 max-w-3xl px-6 py-12">
+                <h1 id="gameName" class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight mb-4 drop-shadow-md min-h-[3.5rem] sm:min-h-[4.5rem]"></h1>
+                <p id="gameDesc" class="text-lg sm:text-xl text-text-dimmed mb-8 min-h-[2rem] font-medium"></p>
+                <a href="#projects-section" class="inline-flex items-center gap-2 px-8 py-3.5 rounded-full font-semibold uppercase tracking-wider text-sm bg-primary text-background hover:bg-secondary hover:text-background transition-all transform hover:-translate-y-0.5 shadow-lg">
+                    View Projects <i class="fas fa-arrow-down"></i>
                 </a>
             </div>
-            <div class="about-text">
-                <p>I am a roblox developer with 6 years of experince, i have been developed almost all kinds of game as personal projects, check out my games bellow, to see what i can do for you!</p>
-                <ul class="skills-list">
-                    <li><i class="fas fa-code"></i> Scripting (+6 years)</li>
-                    <li><i class="fas fa-database"></i> Data Stores</li>
-                    <li><i class="fas fa-users"></i> Multi-Player Networking</li>
-                </ul>
+        </section>
+
+        <section id="about-section" class="py-24 px-6 max-w-6xl mx-auto text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold tracking-tight mb-12 inline-block">My Profile</h2>
+            <div class="bg-surface rounded-2xl p-8 sm:p-10 border border-white/5 shadow-xl flex flex-col md:flex-row items-center gap-8 md:gap-12 text-left">
+                <div class="flex flex-col items-center text-center md:border-r border-white/10 md:pr-10 md:min-w-[250px]">
+                    <img src="./assets/lord lego.png" alt="Avatar of lorddosgames11" class="w-36 h-36 rounded-full object-cover border-4 border-primary shadow-lg mb-4">
+                    <h3 class="text-2xl font-bold text-text-light mb-1">@lorddosgames11</h3>
+                    <p class="text-secondary font-mono text-sm mb-4">Roblox Developer</p>
+                    <a href="https://www.roblox.com/pt/users/756567504/profile" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider border border-primary text-primary hover:bg-primary hover:text-background transition-all">
+                        View Roblox Profile <i class="fas fa-external-link-alt text-xs"></i>
+                    </a>
+                </div>
+                <div class="flex-1 text-text-dimmed leading-relaxed">
+                    <p class="mb-6 text-base sm:text-lg">I am a roblox developer with 6 years of experince, i have been developed almost all kinds of game as personal projects, check out my games bellow, to see what i can do for you!</p>
+                    <ul class="flex flex-wrap gap-3">
+                        <li class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-primary/10 text-primary border border-primary/20 text-xs font-semibold font-mono">
+                            <i class="fas fa-code"></i> Scripting (+6 years)
+                        </li>
+                        <li class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-primary/10 text-primary border border-primary/20 text-xs font-semibold font-mono">
+                            <i class="fas fa-database"></i> Data Stores
+                        </li>
+                        <li class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-primary/10 text-primary border border-primary/20 text-xs font-semibold font-mono">
+                            <i class="fas fa-users"></i> Multi-Player Networking
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </section>
-    
+        </section>
 
-    <section id="bloxtailor-section" class="content-section projects-section">
-        <h2 class="section-title">Blox Tailor</h2>
-
-        <div class="bloxtailor">
-                <video src="./assets/blox tailor.mp4" controls width="90%"></video>
-                <p>
+        <section id="bloxtailor-section" class="py-20 px-6 max-w-6xl mx-auto text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold tracking-tight mb-8 inline-block">Blox Tailor</h2>
+            <div class="bg-surface rounded-2xl p-6 sm:p-8 border border-white/5 shadow-xl max-w-3xl mx-auto flex flex-col items-center">
+                <video src="./assets/blox tailor.mp4" controls preload="metadata" class="w-full rounded-xl shadow-md mb-6 aspect-video object-cover bg-black"></video>
+                <p class="text-text-dimmed mb-6 max-w-xl text-base">
                     I am currently developing this 3D website in React.js to create roblox clothes with ease
-
                 </p>
-                <a target="_blank" href="https://bloxtailor.online">Blox Tailor</a>
-          </div>
-    </section>
-    <section id="projects-section" class="content-section projects-section">
-        <h2 class="section-title">Featured Projects</h2>
+                <a target="_blank" rel="noopener noreferrer" href="https://bloxtailor.online" class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full text-sm font-semibold uppercase tracking-wider bg-primary text-background hover:bg-secondary hover:text-background transition-all shadow-md">
+                    Blox Tailor <i class="fas fa-external-link-alt text-xs"></i>
+                </a>
+            </div>
+        </section>
 
-        <div class="projects-grid" id="projects-grid">
-            
-            <div onclick="window.location = '/games/project.html?id=steal'" class="project-card">
-                <img src="assets/superman logo.png" alt="Steal a comics character" class="project-img">
-                <div class="card-content">
-                    <h3 class="card-title">Steal a comics character</h3>
-                    <p class="card-description">Robbery game featuring superhero characters.</p>
+        <section id="projects-section" class="py-20 px-6 max-w-6xl mx-auto text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold tracking-tight mb-12 inline-block">Featured Projects</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-left" id="projects-grid">
+                
+                <div onclick="window.location = '/games/project.html?id=steal'" class="bg-surface rounded-xl overflow-hidden border border-white/5 hover:border-primary/50 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1.5 cursor-pointer group flex flex-col">
+                    <div class="overflow-hidden h-48 bg-black/40">
+                        <img src="assets/superman logo.png" alt="Steal a comics character" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <h3 class="text-lg font-bold text-primary mb-1.5 group-hover:text-secondary transition-colors">Steal a comics character</h3>
+                        <p class="text-text-dimmed text-sm">Robbery game featuring superhero characters.</p>
+                    </div>
                 </div>
-            </div>
-            <div onclick="window.location = '/games/project.html?id=grapples'" class="project-card">
-                <img src="assets/logo grapples.png" alt="Grapples Logo" class="project-img">
-                <div class="card-content">
-                    <h3 class="card-title">Grapples</h3>
-                    <p class="card-description">Action game featuring grappling hook mechanics.</p>
+
+                <div onclick="window.location = '/games/project.html?id=grapples'" class="bg-surface rounded-xl overflow-hidden border border-white/5 hover:border-primary/50 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1.5 cursor-pointer group flex flex-col">
+                    <div class="overflow-hidden h-48 bg-black/40">
+                        <img src="assets/logo grapples.png" alt="Grapples Logo" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <h3 class="text-lg font-bold text-primary mb-1.5 group-hover:text-secondary transition-colors">Grapples</h3>
+                        <p class="text-text-dimmed text-sm">Action game featuring grappling hook mechanics.</p>
+                    </div>
                 </div>
-            </div>
-            
-            <div onclick="window.location = '/games/project.html?id=questions'" class="project-card">
-                <img src="assets/questions.png" alt="Questions Logo" class="project-img">
-                <div class="card-content">
-                    <h3 class="card-title">Questions</h3>
-                    <p class="card-description">Short Horror Game.</p>
+                
+                <div onclick="window.location = '/games/project.html?id=questions'" class="bg-surface rounded-xl overflow-hidden border border-white/5 hover:border-primary/50 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1.5 cursor-pointer group flex flex-col">
+                    <div class="overflow-hidden h-48 bg-black/40">
+                        <img src="assets/questions.png" alt="Questions Logo" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <h3 class="text-lg font-bold text-primary mb-1.5 group-hover:text-secondary transition-colors">Questions</h3>
+                        <p class="text-text-dimmed text-sm">Short Horror Game.</p>
+                    </div>
                 </div>
-            </div>
 
-            <div onclick="window.location = '/games/project.html?id=terry'" class="project-card">
-                <img src="assets/terry.png" alt="Terry's Prison Logo" class="project-img">
-                <div class="card-content">
-                    <h3 class="card-title">Terry's Prison</h3>
-                    <p class="card-description">Obby Game.</p>
+                <div onclick="window.location = '/games/project.html?id=terry'" class="bg-surface rounded-xl overflow-hidden border border-white/5 hover:border-primary/50 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1.5 cursor-pointer group flex flex-col">
+                    <div class="overflow-hidden h-48 bg-black/40">
+                        <img src="assets/terry.png" alt="Terry's Prison Logo" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <h3 class="text-lg font-bold text-primary mb-1.5 group-hover:text-secondary transition-colors">Terry's Prison</h3>
+                        <p class="text-text-dimmed text-sm">Obby Game.</p>
+                    </div>
                 </div>
-            </div>
-            
-            <div onclick="window.location = '/games/project.html?id=obby'" class="project-card">
-                <img src="assets/obby.jpg" alt="Help a Friend Obby" class="project-img">
-                <div class="card-content">
-                    <h3 class="card-title">Help a Friend (Obby)</h3>
-                    <p class="card-description">2 Friends Obby.</p>
+                
+                <div onclick="window.location = '/games/project.html?id=obby'" class="bg-surface rounded-xl overflow-hidden border border-white/5 hover:border-primary/50 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1.5 cursor-pointer group flex flex-col">
+                    <div class="overflow-hidden h-48 bg-black/40">
+                        <img src="assets/obby.jpg" alt="Help a Friend Obby" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <h3 class="text-lg font-bold text-primary mb-1.5 group-hover:text-secondary transition-colors">Help a Friend (Obby)</h3>
+                        <p class="text-text-dimmed text-sm">2 Friends Obby.</p>
+                    </div>
                 </div>
-            </div>
-            
 
-            <div onclick="window.location = '/games/project.html?id=suits'" class="project-card">
-                <img src="assets/suits.png" alt="Suits Game" class="project-img">
-                <div class="card-content">
-                    <h3 class="card-title">Suits</h3>
-                    <p class="card-description">Businessman Horror Game.</p>
+                <div onclick="window.location = '/games/project.html?id=suits'" class="bg-surface rounded-xl overflow-hidden border border-white/5 hover:border-primary/50 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1.5 cursor-pointer group flex flex-col">
+                    <div class="overflow-hidden h-48 bg-black/40">
+                        <img src="assets/suits.png" alt="Suits Game" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <h3 class="text-lg font-bold text-primary mb-1.5 group-hover:text-secondary transition-colors">Suits</h3>
+                        <p class="text-text-dimmed text-sm">Businessman Horror Game.</p>
+                    </div>
                 </div>
-            </div>
 
-            <div onclick="window.location = '/games/project.html?id=stellar'" class="project-card">
-                <img src="assets/stellarmates.png" alt="Stellar Mates Logo" class="project-img">
-                <div class="card-content">
-                    <h3 class="card-title">Stellar Mates</h3>
-                    <p class="card-description">FNAF PARODY.</p>
+                <div onclick="window.location = '/games/project.html?id=stellar'" class="bg-surface rounded-xl overflow-hidden border border-white/5 hover:border-primary/50 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1.5 cursor-pointer group flex flex-col">
+                    <div class="overflow-hidden h-48 bg-black/40">
+                        <img src="assets/stellarmates.png" alt="Stellar Mates Logo" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-5 flex-1 flex flex-col justify-between">
+                        <h3 class="text-lg font-bold text-primary mb-1.5 group-hover:text-secondary transition-colors">Stellar Mates</h3>
+                        <p class="text-text-dimmed text-sm">FNAF PARODY.</p>
+                    </div>
                 </div>
-            </div>
 
-        </div>
-    </section>
+            </div>
+        </section>
 
-    <section id="gallery-section" class="content-section gallery-section">
-        <h2 class="section-title">Systems and Gameplay Gallery</h2>
-        <p class="subtitle-text">Demonstrations of code and game mechanics I have developed.</p>
+        <section id="gallery-section" class="py-20 px-6 max-w-6xl mx-auto text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold tracking-tight mb-2 inline-block">Systems and Gameplay Gallery</h2>
+            <p class="text-text-dimmed mb-12 text-base">Demonstrations of code and game mechanics I have developed.</p>
 
-        <div class="videos-grid">
-            
-            <div class="video-item">
-                <h3 class="video-title">Grapples | Gameplay</h3>
-                <video src="/assets/GrapplesBaratie.mp4" controls preload="metadata"></video>
-            </div>
-            
-            <div class="video-item">
-                <h3 class="video-title">Boss Hunt | Boss Fight Draft</h3>
-                <video src="/assets/BossHunt1.mp4" controls preload="metadata"></video>
-            </div>
-            
-            <div class="video-item">
-                <h3 class="video-title">Questions | Chase Scene</h3>
-                <video src="/assets/questions1.mp4" controls preload="metadata"></video>
-            </div>
-            
-            <div class="video-item">
-                <h3 class="video-title">Chair Game | Draft</h3>
-                <video src="/assets/CadeiraRussa.mp4" controls preload="metadata"></video>
-            </div>
-            
-            <div class="video-item">
-                <h3 class="video-title">Build Tool | Creation</h3>
-                <video src="/assets/build tool.mp4" controls preload="metadata"></video>
-            </div>
-            
-            <div class="video-item">
-                <h3 class="video-title">Terry Prison | Boss Fight</h3>
-                <video src="/assets/terryBoss.mp4" controls preload="metadata"></video>
-            </div>
-            
-            <div class="video-item">
-                <h3 class="video-title">Terry Prison | Gameplay</h3>
-                <video src="/assets/terryGameplay.mp4" controls preload="metadata"></video>
-            </div>
-            
-            <div class="video-item">
-                <h3 class="video-title">Geometric Rescue | Answer or Die</h3>
-                <video src="/assets/rescue.mp4" controls preload="metadata"></video>
-            </div>
-            
-            <div class="video-item">
-                <h3 class="video-title">Cook System | Roleplay job</h3>
-                <video src="/assets/cookSystem.mp4" controls preload="metadata"></video>
-            </div>
-            
-            <div class="video-item">
-                <h3 class="video-title">Map Edition Save | Mechanic</h3>
-                <video src="/assets/mapSave.mp4" controls preload="metadata"></video>
-            </div>
-            
-            <div class="video-item">
-                <h3 class="video-title">Heroes Tycoon | System</h3>
-                <video src="/assets/tycoon.mp4" controls preload="metadata"></video>
-            </div>
-            
-            <div class="video-item">
-                <h3 class="video-title">Camera System | Draft</h3>
-                <video src="/assets/cameraSystem.mp4" controls preload="metadata"></video>
-            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
+                
+                <div class="bg-surface rounded-xl p-4 border border-white/5 shadow-lg flex flex-col">
+                    <h3 class="text-sm font-semibold text-secondary mb-2.5 truncate">Grapples | Gameplay</h3>
+                    <video src="/assets/GrapplesBaratie.mp4" controls preload="metadata" class="w-full rounded-lg aspect-video object-cover bg-black"></video>
+                </div>
+                
+                <div class="bg-surface rounded-xl p-4 border border-white/5 shadow-lg flex flex-col">
+                    <h3 class="text-sm font-semibold text-secondary mb-2.5 truncate">Boss Hunt | Boss Fight Draft</h3>
+                    <video src="/assets/BossHunt1.mp4" controls preload="metadata" class="w-full rounded-lg aspect-video object-cover bg-black"></video>
+                </div>
+                
+                <div class="bg-surface rounded-xl p-4 border border-white/5 shadow-lg flex flex-col">
+                    <h3 class="text-sm font-semibold text-secondary mb-2.5 truncate">Questions | Chase Scene</h3>
+                    <video src="/assets/questions1.mp4" controls preload="metadata" class="w-full rounded-lg aspect-video object-cover bg-black"></video>
+                </div>
+                
+                <div class="bg-surface rounded-xl p-4 border border-white/5 shadow-lg flex flex-col">
+                    <h3 class="text-sm font-semibold text-secondary mb-2.5 truncate">Chair Game | Draft</h3>
+                    <video src="/assets/CadeiraRussa.mp4" controls preload="metadata" class="w-full rounded-lg aspect-video object-cover bg-black"></video>
+                </div>
+                
+                <div class="bg-surface rounded-xl p-4 border border-white/5 shadow-lg flex flex-col">
+                    <h3 class="text-sm font-semibold text-secondary mb-2.5 truncate">Build Tool | Creation</h3>
+                    <video src="/assets/build tool.mp4" controls preload="metadata" class="w-full rounded-lg aspect-video object-cover bg-black"></video>
+                </div>
+                
+                <div class="bg-surface rounded-xl p-4 border border-white/5 shadow-lg flex flex-col">
+                    <h3 class="text-sm font-semibold text-secondary mb-2.5 truncate">Terry Prison | Boss Fight</h3>
+                    <video src="/assets/terryBoss.mp4" controls preload="metadata" class="w-full rounded-lg aspect-video object-cover bg-black"></video>
+                </div>
+                
+                <div class="bg-surface rounded-xl p-4 border border-white/5 shadow-lg flex flex-col">
+                    <h3 class="text-sm font-semibold text-secondary mb-2.5 truncate">Terry Prison | Gameplay</h3>
+                    <video src="/assets/terryGameplay.mp4" controls preload="metadata" class="w-full rounded-lg aspect-video object-cover bg-black"></video>
+                </div>
+                
+                <div class="bg-surface rounded-xl p-4 border border-white/5 shadow-lg flex flex-col">
+                    <h3 class="text-sm font-semibold text-secondary mb-2.5 truncate">Geometric Rescue | Answer or Die</h3>
+                    <video src="/assets/rescue.mp4" controls preload="metadata" class="w-full rounded-lg aspect-video object-cover bg-black"></video>
+                </div>
+                
+                <div class="bg-surface rounded-xl p-4 border border-white/5 shadow-lg flex flex-col">
+                    <h3 class="text-sm font-semibold text-secondary mb-2.5 truncate">Cook System | Roleplay job</h3>
+                    <video src="/assets/cookSystem.mp4" controls preload="metadata" class="w-full rounded-lg aspect-video object-cover bg-black"></video>
+                </div>
+                
+                <div class="bg-surface rounded-xl p-4 border border-white/5 shadow-lg flex flex-col">
+                    <h3 class="text-sm font-semibold text-secondary mb-2.5 truncate">Map Edition Save | Mechanic</h3>
+                    <video src="/assets/mapSave.mp4" controls preload="metadata" class="w-full rounded-lg aspect-video object-cover bg-black"></video>
+                </div>
+                
+                <div class="bg-surface rounded-xl p-4 border border-white/5 shadow-lg flex flex-col">
+                    <h3 class="text-sm font-semibold text-secondary mb-2.5 truncate">Heroes Tycoon | System</h3>
+                    <video src="/assets/tycoon.mp4" controls preload="metadata" class="w-full rounded-lg aspect-video object-cover bg-black"></video>
+                </div>
+                
+                <div class="bg-surface rounded-xl p-4 border border-white/5 shadow-lg flex flex-col">
+                    <h3 class="text-sm font-semibold text-secondary mb-2.5 truncate">Camera System | Draft</h3>
+                    <video src="/assets/cameraSystem.mp4" controls preload="metadata" class="w-full rounded-lg aspect-video object-cover bg-black"></video>
+                </div>
 
-        </div>
-    </section>
+            </div>
+        </section>
+    </main>
 
-    <footer id="contact-section" class="main-footer">
-        <div class="footer-content">
-            <p class="footer-text">Interested in a project? Let's talk!</p>
-            <p class="contact-info">
+    <footer id="contact-section" class="bg-surface-dark py-12 px-6 border-t border-white/10 text-center">
+        <div class="max-w-6xl mx-auto">
+            <p class="text-xl font-semibold text-text-light mb-2">Interested in a project? Let's talk!</p>
+            <p class="text-text-dimmed font-mono text-sm">
                 Contact me on Discord: 
-                <span class="discord-tag"><i class="fab fa-discord"></i> **@lorddosgames**</span>
+                <span class="text-primary font-bold"><i class="fab fa-discord"></i> @lorddosgames</span>
             </p>
         </div>
     </footer>
