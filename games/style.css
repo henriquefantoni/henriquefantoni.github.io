@@ -8,8 +8,8 @@
     --color-card-bg: #1e1e1e; /* Fundo dos cards */
     --color-text-light: #f0f0f0; /* Texto claro */
     --color-text-dimmed: #aaaaaa; /* Texto secundário */
-    --font-primary: 'Montserrat', sans-serif;
-    --font-code: 'Roboto Mono', monospace;
+    --font-primary: 'Outfit', sans-serif;
+    --font-code: 'JetBrains Mono', monospace;
     --spacing-sm: 10px;
     --spacing-md: 20px;
     --spacing-lg: 40px;
@@ -50,10 +50,9 @@ a:hover {
 .section-title {
     font-size: 2.5rem;
     font-weight: 700;
+    letter-spacing: -0.02em;
     margin-bottom: var(--spacing-lg);
-    border-bottom: 3px solid var(--color-primary);
     display: inline-block;
-    padding-bottom: 5px;
 }
 
 .subtitle, .subtitle-text {
@@ -82,6 +81,7 @@ a:hover {
 
 .primary-btn:hover, .hero-btn:hover {
     background-color: var(--color-secondary);
+    color: var(--color-background);
     transform: translateY(-3px);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
@@ -209,7 +209,7 @@ a:hover {
     color: var(--color-text-dimmed);
     padding: 40px 5%;
     text-align: center;
-    border-top: 5px solid var(--color-primary);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer-text {
@@ -235,7 +235,7 @@ a:hover {
 
 .copyright {
     font-size: 0.8rem;
-    color: #555;
+    color: var(--color-text-dimmed);
 }
 
 /* 12. Responsividade */

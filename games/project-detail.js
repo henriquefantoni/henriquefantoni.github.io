@@ -1,11 +1,12 @@
 document.addEventListener('DOMContentLoaded', async () => {
     const urlParams = new URLSearchParams(window.location.search);
     const projectId = urlParams.get('id');
+    const mainContent = document.getElementById('project-main-content');
 
     if (!projectId) {
         document.getElementById('project-title').textContent = "Project Not Found";
         document.getElementById('project-description').textContent = "No project ID provided in the URL.";
-        document.getElementById('project-main-image').style.display = 'none';
+        if (mainContent) mainContent.style.display = 'none';
         document.getElementById('project-media-section').style.display = 'none';
         document.getElementById('pageTitle').textContent = "Error | Lorddosgames";
         return;
@@ -23,8 +24,16 @@ document.addEventListener('DOMContentLoaded', async () => {
             document.getElementById('pageTitle').textContent = `${project.title} | Lorddosgames`;
             document.getElementById('project-title').textContent = project.title;
             document.getElementById('project-description').textContent = project.description;
-            document.getElementById('project-main-image').src = project.image;
-            document.getElementById('project-main-image').alt = `${project.title} Main Image`;
+
+            if (mainContent) {
+                mainContent.innerHTML = '';
+                const mainImg = document.createElement('img');
+                mainImg.id = 'project-main-image';
+                mainImg.src = project.image;
+                mainImg.alt = `${project.title} Main Image`;
+                mainImg.classList.add('game-image');
+                mainContent.appendChild(mainImg);
+            }
 
             const mediaGrid = document.getElementById('project-media-grid');
             mediaGrid.innerHTML = ''; // Limpa qualquer conteúdo existente
@@ -59,7 +68,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         } else {
             document.getElementById('project-title').textContent = "Project Not Found";
             document.getElementById('project-description').textContent = `The project with ID "${projectId}" could not be found.`;
-            document.getElementById('project-main-image').style.display = 'none';
+            if (mainContent) mainContent.style.display = 'none';
             document.getElementById('project-media-section').style.display = 'none';
             document.getElementById('pageTitle').textContent = "Error | Lorddosgames";
         }
@@ -68,7 +77,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         console.error('Failed to load project details:', error);
         document.getElementById('project-title').textContent = "Error Loading Project";
         document.getElementById('project-description').textContent = "There was an error loading project details. Please try again later.";
-        document.getElementById('project-main-image').style.display = 'none';
+        if (mainContent) mainContent.style.display = 'none';
         document.getElementById('project-media-section').style.display = 'none';
         document.getElementById('pageTitle').textContent = "Error | Lorddosgames";
     }
