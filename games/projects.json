@@ -27,11 +27,6 @@
                 "title": "Quiz UI/UX",
                 "type": "video",
                 "src": "/assets/questions1.mp4"
-            },
-            {
-                "title": "Question Bank Preview",
-                "type": "image",
-                "src": "/assets/questions_bank.jpg"
             }
         ]
     },

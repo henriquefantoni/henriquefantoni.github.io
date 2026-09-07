@@ -139,7 +139,7 @@ a:hover {
 /* 6. Hero */
 .hero-image {
     height: 100vh;
-    background: url('./assets/default-hero.jpg') center/cover no-repeat; /* Use uma imagem de fundo de alta qualidade aqui */
+    background: #121212 center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -234,10 +234,6 @@ a:hover {
 /* 8. Seção Projetos (Grid) */
 .projects-section {
     text-align: center;
-}
-
-.bloxtailor {
-    
 }
 
 .projects-grid {
@@ -342,11 +338,6 @@ a:hover {
 
 .discord-tag i {
     margin-right: 5px;
-}
-
-.copyright {
-    font-size: 0.8rem;
-    color: #555;
 }
 
 /* 11. Responsividade */

@@ -55,14 +55,6 @@ document.addEventListener('DOMContentLoaded', async () => {
                 mediaGrid.appendChild(mediaDiv);
             });
 
-            // Se houver um botão de "Play Game" no HTML, você pode habilitá-lo aqui
-            // const playGameBtn = document.querySelector('.play-game-btn');
-            // if (project.gameLink) { // Assumindo que você adicionaria 'gameLink' ao JSON
-            //     playGameBtn.href = project.gameLink;
-            //     playGameBtn.style.display = 'inline-block';
-            // } else {
-            //     playGameBtn.style.display = 'none';
-            // }
 
         } else {
             document.getElementById('project-title').textContent = "Project Not Found";
