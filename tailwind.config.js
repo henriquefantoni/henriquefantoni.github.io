@@ -16,6 +16,10 @@ module.exports = {
           DEFAULT: "#ffaa00",
           hover: "#e69900",
         },
+        tiktok: {
+          DEFAULT: "#fe2c55",
+          hover: "#e02447",
+        },
         background: "#121212",
         surface: "#1e1e1e",
         "surface-dark": "#0d0d0d",
